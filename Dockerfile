@@ -13,5 +13,7 @@ RUN zsh --version
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" \
     && chsh -s $(which zsh)
 
+# COPY ~.ssh ~/.ssh
+
 # Set Zsh as the default shell
 CMD ["zsh"]
